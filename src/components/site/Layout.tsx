@@ -11,7 +11,7 @@ export function Logo({ light }: { light?: boolean }) {
   return (
     <Link to="/" className={`flex items-center gap-2 font-display text-2xl font-bold ${light ? "text-primary-foreground" : "text-primary"}`}>
       <span className="grid h-9 w-9 place-items-center rounded-xl bg-gradient-sky text-primary-foreground"><Compass className="h-5 w-5" /></span>
-      Explore<span className="text-accent">World</span>
+      <span>Explore<span className="text-accent">World</span></span>
     </Link>
   );
 }
