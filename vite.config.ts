@@ -13,7 +13,7 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 // deploy workflow sets VITE_BASE_PATH=/<repo-name>/. Locally and on Lovable it stays "/".
 // When a base path is set we also prerender every page to static HTML, because
 // GitHub Pages can only host static files (no server).
-const pagesBasePath = process.env.VITE_BASE_PATH;
+const pagesBasePath = process.env["VITE_BASE_PATH"];
 
 export default defineConfig({
   vite: {
